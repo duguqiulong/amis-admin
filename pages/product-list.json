@@ -1,0 +1,55 @@
+{
+  "type": "page",
+  "remark": null,
+  "body": [
+    {
+      "type": "crud",
+      "name": "product list",
+      "title": "产品列表 ${count}",
+      "api": {
+        "method": "post",
+        "url": "http://192.168.118.168:6059/tacos-cloud-market/api/market/product/query",
+        "data": {
+          "resourceTypes": ["${keywords}"]
+        }
+      },
+      "filter": {
+        "title": "",
+        "mode": "inline",
+        "wrapWithPanel": false,
+        "submitText": "",
+        "controls": [
+          {
+            "type": "text",
+            "name": "keywords",
+            "placeholder": "产品类型搜索",
+            "addOn": {
+              "label": "搜索",
+              "type": "submit",
+              "className": "btn-success"
+            },
+            "clearable": true
+          }
+        ],
+        "className": "m-b-sm"
+      },
+      "columns": [
+        {
+          "type": "static",
+          "name": "name",
+          "label": "name"
+        },
+        {
+          "type": "static",
+          "name": "code",
+          "label": "code"
+        },
+        {
+          "type": "static",
+          "name": "version",
+          "label": "version"
+        }
+      ]
+    }
+  ]
+}

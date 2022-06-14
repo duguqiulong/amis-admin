@@ -1,0 +1,29 @@
+{
+  "type": "page",
+  "remark": null,
+  "body": [
+    {
+      "type": "crud",
+      "name": "suite details",
+      "title": "查看报告详情 ${count}",
+      "api": "https://3xsw4ap8wah59.cfc-execute.bj.baidubce.com/api/amis-mock/sample/list",
+      "columns": [
+        {
+          "type": "static",
+          "name": "version",
+          "label": "gmtCreate"
+        },
+        {
+          "type": "static",
+          "name": "browser",
+          "label": "suiteName"
+        },
+        {
+          "type": "static",
+          "name": "grade",
+          "label": "suiteStatus"
+        }
+      ]
+    }
+  ]
+}

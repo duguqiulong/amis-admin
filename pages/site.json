@@ -6,7 +6,7 @@
       {
         "label": "Home",
         "url": "/",
-        "redirect": "/index/1"
+        "redirect": "/index/2"
       },
       {
         "label": "示例",
@@ -100,6 +100,23 @@
       {
         "label": "分组2",
         "children": [
+          {
+            "label": "报告查看",
+            "url": "/report",
+            "rewrite": "/report/view",
+            "children": [
+              {
+                "label": "报告",
+                "url": "/report/view",
+                "schemaApi": "get:/pages/report-view.json"
+              },
+              {
+                "label": "产品列表",
+                "url": "/product/list",
+                "schemaApi": "get:/pages/product-list.json"
+              }
+            ]
+          },
           {
             "label": "用户管理",
             "schema": {
