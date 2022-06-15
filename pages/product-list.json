@@ -25,15 +25,12 @@
             "name": "keywords",
             "required": true,
             "placeholder": "产品类型",
-            
-            
             "clearable": true
           },
           {
             "type": "text",
             "name": "code",
             "placeholder": "产品编码",
-           
             "clearable": true
           },
           {
