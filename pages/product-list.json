@@ -61,6 +61,25 @@
           "type": "static",
           "name": "typeCode",
           "label": "type"
+        },
+        {
+          "type": "operation",
+          "label": "操作",
+          "width": "",
+          "buttons": [
+            {
+              "type": "button-group",
+              "buttons": [
+                {
+                  "type": "button",
+                  "label": "查看",
+                  "level": "primary",
+                  "actionType": "link",
+                  "link": "/product/view/${code}/${typeCode}"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

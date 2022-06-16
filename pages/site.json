@@ -114,7 +114,13 @@
                 "label": "产品列表",
                 "url": "/product/list",
                 "schemaApi": "get:/pages/product-list.json"
+              },
+              {
+                "label": "产品详情",
+                "url": "/product/view/:code/:typeCode",
+                "schemaApi": "get:/pages/product-view.json"
               }
+
             ]
           },
           {

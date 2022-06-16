@@ -1,0 +1,57 @@
+{
+  "type": "page",
+  "title": "产品详情",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/product/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "type": "crud",
+      "name": "product view",
+      "title": "产品详情列表 ${param}",
+      "api": {
+        "method": "post",
+        "url": "http://192.168.118.168:6059/tacos-cloud-market/api/market/product/query/data",
+        "data": {
+          "code": "${params.code}",
+          "resourceTypes": ["${params.typeCode}"]
+        }
+      },
+      "columns": [
+        {
+          "type": "static",
+          "name": "name",
+          "label": "name"
+        },
+        {
+          "type": "static",
+          "name": "code",
+          "label": "code"
+        },
+        {
+          "type": "static",
+          "name": "version",
+          "label": "version"
+        },
+        {
+          "type": "static",
+          "name": "typeCode",
+          "label": "type"
+        },
+        {
+          "type": "json",
+          "name": "metaData",
+          "label": "metaData"
+        }
+        
+      ]
+      
+    }
+  ]
+}
